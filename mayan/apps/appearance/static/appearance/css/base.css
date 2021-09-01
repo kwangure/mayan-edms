@@ -304,23 +304,16 @@ a i {
     font-weight: bold;
 }
 
-/*
- * Main content
- */
-
-.main {
-}
-
 /* Remove scroll bar caused by bootstraps -15px on .row margins */
 .zero-margin {
     margin-right: 0;
     margin-left: 0;
+}
 
-    > .col,
-    > [class*="col-"] {
-        padding-right: 0;
-        padding-left: 0;
-    }
+.zero-margin > .col,
+.zero-margin > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 @media (min-width: 768px) {
@@ -346,9 +339,6 @@ a i {
 
 .has-sidebar {
     padding-right: 0px;
-}
-
-#sidebar {
 }
 
 @media (min-width: 768px) {
@@ -525,9 +515,6 @@ a i {
 }
 
 .navbar-brand {
-}
-
-.navbar-brand {
     outline: none;
 }
 
@@ -648,4 +635,13 @@ a i {
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
+}
+
+/* 17313 Hacky Edits */
+.btn-default {
+    color: #181817 !important;
+}
+
+.main a:not(.btn-primary) {
+    color: #2b574e !important;
 }
